@@ -1,0 +1,80 @@
+{
+  "dataTable": {
+    "loading": "Pobieranie danych...",
+    "noData": "Brak danych"
+  },
+  "user": {
+    "userId": "User ID",
+    "firstname": "Imię",
+    "lastname": "Nazwisko",
+    "email": "Email",
+    "listTitle": "Lista użytkowników",
+    "addNewUser": "Dodaj nowego użytkownika",
+    "edit": {
+      "updateTitle": "Edycja użytkownika",
+      "createTitle": "Dodawanie użytkownika"
+    },
+    "confirmDeleteMessage": "Czy rzeczywiście chcesz usunąć użytkownika?",
+    "hardware": "Posiadany komputer"
+  },
+  "hardware": {
+    "hardwareId": "ID",
+    "name": "Nazwa",
+    "serialNumber": "Nr seryjny",
+    "productionMonth": "Miesiąc produkcji",
+    "listTitle": "Lista komputerów",
+    "addNewHardware": "Dodaj nowy komputer",
+    "confirmDeleteMessage": "Czy rzeczywiście chcesz usunąć komputer?",
+    "edit": {
+      "updateTitle": "Edycja komputera",
+      "createTitle": "Dodawanie nowego komputera"
+    },
+    "system": "Zainstalowany system",
+    "localization": "Położenie",
+    "leaseToUser": "Wydaj dla użytkownika",
+    "returnToOffice": "Zwróć do biura",
+    "toUserTitle": "Wydanie dla użytkownika",
+    "user": "Użytkownik"
+  },
+  "system": {
+    "listTitle": "Lista systemów",
+    "addNewSystem": "Dodaj nowy system",
+    "systemId": "ID",
+    "name": "Nazwa",
+    "confirmDeleteMessage": "Czy rzeczywiście chcesz usunąć system?",
+    "edit": {
+      "updateTitle": "Edycja systemu",
+      "createTitle": "Dodawanie nowego systemu"
+    }
+  },
+  "validation": {
+    "isRequired": "Wartość jest wymagana",
+    "hasMaxLength": "Tekst w polu jest zbyt długi (max. {maxLength} znaków)",
+    "isEmail": "Nieprawidłowy email"
+  },
+  "common": {
+    "save": "Zapisz",
+    "actions": "Akcje",
+    "edit": "Edytuj",
+    "confirmation": "Potwierdzenie",
+    "yes": "Tak",
+    "no": "Nie"
+  },
+  "api": {
+    "errors": {
+      "validationErrors": "Wystąpiły błędy walidacji - sprawdź poprawność danych",
+      "method": {
+        "get": "Błąd pobierania danych",
+        "post": "Błąd zapisu danych",
+        "put": "Błąd aktualizacji danych",
+        "delete": "Błąd aktualizacji/usuwania danych"
+      },
+      "status": {
+        "badRequest": "błędne dane",
+        "notFound": "strona lub dane nie znalezione",
+        "serverError": "błąd serwera",
+        "unexpected": "nieoczekiwany błąd"
+      }
+    }
+  }
+}

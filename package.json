@@ -1,0 +1,41 @@
+{
+  "name": "laravel_vue",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/lodash": "^4.14.185",
+    "axios": "^0.27.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "lodash": "^4.17.21",
+    "sass-loader": "13.0.2",
+    "vue": "2.7.4",
+    "vue-class-component": "7.2.6",
+    "vue-i18n": "^8.27.1",
+    "vue-lodash": "^2.1.2",
+    "vue-property-decorator": "9.1.2",
+    "vue-router": "^3.5.4",
+    "vuetify": "2.6.10"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.0.96",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "6.0.49",
+    "postcss": "8.4.16",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.54.9",
+    "ts-loader": "^9.4.0",
+    "typescript": "4.8.3",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "2.7.10",
+    "vuetifyjs-mix-extension": "0.0.20",
+    "webpack": "5.74.0"
+  }
+}
