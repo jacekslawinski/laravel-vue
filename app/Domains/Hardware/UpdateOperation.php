@@ -41,7 +41,8 @@ final class UpdateOperation extends AbstractOperation
                 ]
             );
             $this->validateWithResponse(StoreValidator::class, $input);
-            $response = new RespondSuccessJson('success', $this->hardwareRepository->update($hardware, $input));
+            $this->hardwareRepository->update($hardware, $input);
+            $response = new RespondSuccessJson('success', $hardware);
         } catch (QueryException) {
             $response = new RespondServerErrorJson('Błąd dodawania hardware');
         }

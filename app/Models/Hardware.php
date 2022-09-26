@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property string $name
  * @property string $serial_number
  * @property string $production_month
- * @property int system_id
+ * @property int $system_id
  * @property \DateTime $deleted_at
  * @property \DateTime $created_at
  * @property \DateTime $updated_at
@@ -48,7 +48,7 @@ final class Hardware extends BaseModel
     ];
 
     /**
-     * @var array $fillable
+     * @var array<string> $fillable
      */
     protected $fillable = [
         'name',
@@ -58,7 +58,7 @@ final class Hardware extends BaseModel
     ];
 
     /**
-     * @var array $hidden
+     * @var array<string> $hidden
      */
     protected $hidden = [
         'created_at',

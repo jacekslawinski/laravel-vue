@@ -34,7 +34,8 @@ final class UpdateOperation extends AbstractOperation
         try {
             $input = $this->requestData('name');
             $this->validateWithResponse(StoreValidator::class, $input);
-            $response = new RespondSuccessJson('success', $this->systemRepository->update($system, $input));
+            $this->systemRepository->update($system, $input);
+            $response = new RespondSuccessJson('success', $system);
         } catch (QueryException) {
             $response = new RespondServerErrorJson('Błąd dodawania systemu');
         }

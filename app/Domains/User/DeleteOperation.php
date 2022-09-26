@@ -32,7 +32,7 @@ final class DeleteOperation extends AbstractOperation
     {
         try {
             $this->userRepository->delete($user);
-            $response = $this->runResponse(new RespondNoContentJson('success'));
+            $response = new RespondNoContentJson('success');
         } catch (QueryException) {
             $response = new RespondServerErrorJson('Błąd usuwania user');
         }

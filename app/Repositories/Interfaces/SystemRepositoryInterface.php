@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Repositories\Interfaces;
 
 use App\Models\System;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 
 interface SystemRepositoryInterface
 {

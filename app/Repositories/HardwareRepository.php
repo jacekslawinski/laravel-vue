@@ -6,7 +6,7 @@ namespace App\Repositories;
 
 use App\Models\Hardware;
 use App\Repositories\Interfaces\HardwareRepositoryInterface;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 
 final class HardwareRepository implements HardwareRepositoryInterface
 {
@@ -27,17 +27,7 @@ final class HardwareRepository implements HardwareRepositoryInterface
      */
     public function store(array $attributes): Hardware
     {
-        $hardware = Hardware::create($attributes);
-        if (!empty($attributes['system_id'])) {
-            $hardware->system()
-                ->create(
-                    [
-                        'system_id' => $attributes['system_id']
-                    ]
-                );
-            $hardware->load('system');
-        }
-        return $hardware;
+        return $hardware = Hardware::create($attributes);
     }
 
     /**
@@ -48,9 +38,6 @@ final class HardwareRepository implements HardwareRepositoryInterface
      */
     public function update(Hardware $hardware, array $attributes): void
     {
-        if (empty($attributes['system_id'])) {
-            $hardware->system()->delete();
-        }
         $hardware->update($attributes);
     }
 

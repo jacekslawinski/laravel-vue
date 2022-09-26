@@ -32,7 +32,7 @@ final class System extends Model
     ];
 
     /**
-     * @var array $casts
+     * @var array<string, string> $casts
      */
     protected $casts = [
       'id' => 'integer',
@@ -49,7 +49,7 @@ final class System extends Model
     ];
 
     /**
-     * @var array $fillable
+     * @var array<string> $fillable
      */
     protected $fillable = [
         'name',

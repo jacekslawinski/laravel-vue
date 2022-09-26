@@ -15,13 +15,6 @@ class Handler extends ExceptionHandler
     use ResponseJsonTrait;
 
     /**
-     * A list of the exception types that are not reported.
-     *
-     * @var array
-     */
-    protected $dontReport = [];
-
-    /**
      *
      * @param mixed $request
      * @param Throwable $exception

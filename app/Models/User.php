@@ -6,7 +6,6 @@ namespace App\Models;
 
 use App\Models\User\HasMutators;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * App\Models\User
@@ -40,7 +39,7 @@ final class User extends BaseModel
     ];
 
     /**
-     * @var array $fillable
+     * @var array<string> $fillable
      */
     protected $fillable = [
         'firstname',
@@ -50,7 +49,7 @@ final class User extends BaseModel
 
     /**
      *
-     * @var array $hidden
+     * @var array<string> $hidden
      */
     protected $hidden = [
         'password',
@@ -61,7 +60,7 @@ final class User extends BaseModel
 
     /**
      *
-     * @return HasOne
+     * @return HasMany
      */
     public function userHardwares(): HasMany
     {

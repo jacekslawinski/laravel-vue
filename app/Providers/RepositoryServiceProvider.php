@@ -14,7 +14,7 @@ class RepositoryServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->scanDir(base_path('app' . DIRECTORY_SEPARATOR . static::REPOSITORY_INTERFACE_DIR), '');
+        $this->scanDir(base_path('app' . DIRECTORY_SEPARATOR . self::REPOSITORY_INTERFACE_DIR), '');
     }
 
     /**
@@ -44,8 +44,8 @@ class RepositoryServiceProvider extends ServiceProvider
     private function bind(string $nameSpace): void
     {
         $this->app->bind(
-            static::REPOSITORY_NAMESPACE . '\Interfaces' . $nameSpace . 'Interface',
-            static::REPOSITORY_NAMESPACE . $nameSpace
+            self::REPOSITORY_NAMESPACE . '\Interfaces' . $nameSpace . 'Interface',
+            self::REPOSITORY_NAMESPACE . $nameSpace
         );
     }
 }

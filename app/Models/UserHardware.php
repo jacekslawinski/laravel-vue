@@ -36,7 +36,7 @@ final class UserHardware extends BaseModel
     protected $table = 'user_hardwares';
 
     /**
-     * @var array $fillable
+     * @var array<string> $fillable
      */
     protected $fillable = [
         'user_id',
@@ -44,7 +44,7 @@ final class UserHardware extends BaseModel
     ];
 
     /**
-     * @var array $fillable
+     * @var array<string> $hidden
      */
     protected $hidden = [
         'user_id',

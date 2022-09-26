@@ -40,7 +40,8 @@ final class UpdateOperation extends AbstractOperation
                 ]
             );
             $this->validateWithResponse(UpdateValidator::class, $input);
-            $response = new RespondSuccessJson('success', $this->userRepository->update($user, $input));
+            $this->userRepository->update($user, $input);
+            $response = new RespondSuccessJson('success', $user);
         } catch (QueryException) {
             $response = new RespondServerErrorJson('Błąd dodawania użytkownika');
         }

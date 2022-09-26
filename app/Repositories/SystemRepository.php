@@ -6,7 +6,7 @@ namespace App\Repositories;
 
 use App\Models\System;
 use App\Repositories\Interfaces\SystemRepositoryInterface;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 
 final class SystemRepository implements SystemRepositoryInterface
 {

@@ -17,7 +17,6 @@ final class AppServiceProvider extends ServiceProvider
     {
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(RepositoryServiceProvider::class);
-        $this->bind();
         $this->registerResources();
     }
 
@@ -28,14 +27,5 @@ final class AppServiceProvider extends ServiceProvider
     private function registerResources(): void
     {
         View::addNamespace('web', base_path('resources/views'));
-    }
-
-    /**
-     *
-     * @return void
-     */
-    private function bind(): void
-    {
-        $this->app->bind(Signer::class, Sha256::class);
     }
 }
