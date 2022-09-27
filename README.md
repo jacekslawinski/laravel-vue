@@ -13,6 +13,10 @@ Po stronie frontend - Vue 2
 
 `localhost:8080`  
 
+## Uruchomienie testów
+
+`./phpunit.sh` - w kontenerze laravel-vue        
+
 ## Autor
 
 Jacek Sławiński  
