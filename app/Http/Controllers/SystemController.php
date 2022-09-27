@@ -46,10 +46,12 @@ final class SystemController extends Controller
 
     /**
      *
+     * @param System $system
+     * @param DeleteOperation $
      * @return JsonResponse
      */
-    public function destroy(): JsonResponse
+    public function destroy(System $system, DeleteOperation $deleteOperation): JsonResponse
     {
-        return $this->serve(DeleteOperation::class);
+        return $deleteOperation->handle($system);
     }
 }

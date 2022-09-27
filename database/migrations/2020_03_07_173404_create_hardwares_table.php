@@ -24,6 +24,7 @@ class CreateHardwaresTable extends Migration
             $table->string('name', 100);
             $table->string('serial_number', 100);
             $table->char('production_month', 7);
+            $table->unsignedInteger('system_id')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -30,7 +30,7 @@ CREATE TABLE `hardwares` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `serial_number` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `production_month` CHAR(7) NOT NULL,
-  `system_id` int unsigned NOT NULL,
+  `system_id` int unsigned DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,

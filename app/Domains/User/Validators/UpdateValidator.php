@@ -14,13 +14,15 @@ final class UpdateValidator extends AbstractInputValidator
      */
     protected function rules(): array
     {
+        $currentUser = request()->get('user');
         return [
             'firstname' => 'required|string|max:50',
             'lastname' => 'required|string|max:50',
             'email' => [
                 'required',
                 'email',
-                'max:255'
+                'max:255',
+                'unique:users,email,' . $currentUser
             ],
         ];
     }
