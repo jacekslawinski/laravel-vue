@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 trait CreatesApplication
 {
-
     protected static $migrationsRun = false;
 
     public function createApplication()

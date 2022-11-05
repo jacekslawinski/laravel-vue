@@ -47,7 +47,7 @@ final class SystemController extends Controller
     /**
      *
      * @param System $system
-     * @param DeleteOperation $
+     * @param DeleteOperation $deleteOperation
      * @return JsonResponse
      */
     public function destroy(System $system, DeleteOperation $deleteOperation): JsonResponse

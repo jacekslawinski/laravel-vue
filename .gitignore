@@ -3,3 +3,5 @@
 /bootstrap/cache/*.php
 .vscode/settings.json
 .phpunit.result.cache
+/storage/framework/views/*.php
+storage/logs/*.log
