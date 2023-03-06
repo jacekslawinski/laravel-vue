@@ -12,7 +12,7 @@ class RepositoryServiceProvider extends ServiceProvider
     private const REPOSITORY_INTERFACE_DIR = 'Repositories' . DIRECTORY_SEPARATOR . 'Interfaces';
     private const REPOSITORY_NAMESPACE = 'App\Repositories';
 
-    public function register()
+    public function boot()
     {
         $this->scanDir(base_path('app' . DIRECTORY_SEPARATOR . self::REPOSITORY_INTERFACE_DIR), '');
     }
