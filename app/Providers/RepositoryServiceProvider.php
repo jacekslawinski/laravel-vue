@@ -19,8 +19,9 @@ class RepositoryServiceProvider extends ServiceProvider
 
     /**
      *
-     * @param  string  $path
-     * @param  string  $nameSpace
+     * @param string $path
+     * @param string $nameSpace
+     * @return void
      */
     private function scanDir(string $path, string $nameSpace): void
     {

@@ -9,17 +9,12 @@ use Illuminate\Support\Str;
 
 class BaseModel extends Model
 {
-    /**
-     *
-     * @return array
-     */
-    public function toArray(): array
+
+    public static function boot()
     {
-        $serializedModel = parent::toArray();
-        $camelSerializedModel = array();
-        foreach ($serializedModel as $name => $value) {
-            $camelSerializedModel[Str::camel($name)] = $value;
-        }
-        return $camelSerializedModel;
+        parent::boot();
+        static::saving(function($model) {
+            return config('database.can_write');
+        });
     }
 }

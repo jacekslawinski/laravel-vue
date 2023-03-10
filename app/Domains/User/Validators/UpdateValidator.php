@@ -14,7 +14,7 @@ final class UpdateValidator extends AbstractInputValidator
      */
     protected function rules(): array
     {
-        $currentUser = request()->get('user');
+        $currentUser = request()->route('user');
         return [
             'firstname' => 'required|string|max:50',
             'lastname' => 'required|string|max:50',
@@ -22,7 +22,7 @@ final class UpdateValidator extends AbstractInputValidator
                 'required',
                 'email',
                 'max:255',
-                'unique:users,email,' . $currentUser
+                'unique:users,email,' . $currentUser->id
             ],
         ];
     }

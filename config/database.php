@@ -57,7 +57,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
-            'engine' => null,
+            'engine' => null
         ],
 
         'mysql_without_database' => [
@@ -152,5 +152,5 @@ return [
         ],
 
     ],
-
+    'can_write' => env('DB_CAN_WRITE', true)
 ];
