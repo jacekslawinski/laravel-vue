@@ -13,8 +13,7 @@ class BaseModel extends Model
     public static function boot()
     {
         parent::boot();
-        static::saving(function($model) {
-            return config('database.can_write');
-        });
+        static::saving(fn($model) => config('database.can_write'));
+        static::deleting(fn($model) => config('database.can_write'));
     }
 }
