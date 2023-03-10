@@ -17,6 +17,11 @@ Po stronie frontend - Vue 2
 
 `./phpunit.sh` - w kontenerze laravel-vue        
 
+## Demo aplikacji
+
+demo (bez możliwości zapisu zmian) dostępne jest pod adresem  
+http://laravel.js63.vot.pl/
+
 ## Autor
 
 Jacek Sławiński  
