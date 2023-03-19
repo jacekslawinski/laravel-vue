@@ -1,6 +1,6 @@
 ## Przykład kodu Laravel + Vue
 
-Przykład bardzo prostej aplikacji do zarządzania bazą komputerów.  
+Przykład bardzo prostej aplikacji do zarządzania bazą komputerów (bardziej jako pokazanie sposobu mojego kodowania, niż biznesowych wartości).  
 Po stronie backend - Laravel 9  
 Po stronie frontend - Vue 2  
 
